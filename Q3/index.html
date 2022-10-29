@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <title>Q3</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="video">
+        <video id="my-video" class="video-js" preload="auto" data-setup="" loop>
+          <source src="assets/video/1.mp4" type="video/mp4" />
+        </video>
+        <!-- Define the section for displaying the seek slider-->
+        <div class="slider_container">
+          <input
+            type="range"
+            min="1"
+            max="100"
+            value="0"
+            class="seek_slider"
+            onchange="seekTo()"
+          />
+        </div>
+        <div class="buttons">
+          <div class="left-controls">
+            <div class="playpause" onclick="playpause()">
+              <i class="fa fa-play"></i>
+            </div>
+            <div class="next-video" onclick="nextvideo()">
+              <i class="fa fa-step-forward"></i>
+            </div>
+            <i class="fa fa-volume-down"></i>
+            <input
+              type="range"
+              min="1"
+              max="100"
+              value="99"
+              class="volume_slider"
+              onchange="setVolume()"
+            />
+            <i class="fa fa-volume-up"></i>
+
+            <div class="current-time">00:00 / 00:00</div>
+          </div>
+          <div class="right-controls">
+            
+            <span class="material-symbols-outlined"> album </span>
+            <span class="material-symbols-outlined"> closed_caption </span>
+            <span class="material-symbols-outlined"> settings </span>
+            <span class="material-symbols-outlined">picture_in_picture_alt</span>
+            <span class="material-symbols-outlined">picture_in_picture_alt </span>
+            <span class="material-symbols-outlined"> fullscreen </span>
+          </div>
+        </div>
+      </div>
+      <div class="info">
+        <p class="description">
+          MongoDB & Node.js: Connecting & CRUD Operations (Part 1 of 4)
+        </p>
+        <div class="view-actions">
+          <p class="view">94,844 views . Premiered Apr 29, 2021</p>
+          <div class="actions">
+            <div class="like row">
+              <span class="material-symbols-outlined"> thumb_up </span>
+              <p>1.6k</p>
+            </div>
+            <div class="dislike row">
+              <span class="material-symbols-outlined"> thumb_down </span>
+              <p>DISLIKE</p>
+            </div>
+            <div class="share row">
+              <span class="material-symbols-outlined">
+                google_plus_reshare
+              </span>
+              <p>SHARE</p>
+            </div>
+            <div class="download row">
+              <span class="material-symbols-outlined"> download </span>
+              <p>DOWNLOAD</p>
+            </div>
+            <div class="clip row">
+              <span class="material-symbols-outlined"> cut </span>
+              <p>CLIP</p>
+            </div>
+            <div class="save row">
+              <span class="material-symbols-outlined"> playlist_add </span>
+              <p>SAVE</p>
+            </div>
+            <p class="more-options">...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/script/script.js"></script>
+  </body>
+</html>
