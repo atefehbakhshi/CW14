@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <title>Q2</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="music">
+            <img src="./assets/image/Ali-Zand-Vakili-Rouyaye-Bi-Tekrar.jpg" alt="Ali zand vakili" id="singer-img">
+            <div class="music-info">
+                <div class="eng">
+                    <p class="singer-name" id="eng-singer-name">Ali Zand Vakili</p>
+                    <p class="album" id="eng-album">Royaye Bi Tekrar</p>
+                    <p class="music-name" id="eng-music-name">Atash Dar Aab</p>
+                </div>
+                <div class="per">
+                    <p class="singer-name" id="per-singer-name">علی زند وکیلی</p>
+                    <p class="album" id="per-album">رویای بی تکرار</p>
+                    <p class="music-name" id="per-music-name">آتش در آب</p>
+                </div>
+            </div>
+        </div>
+        <div class="likes"><span>&#10084</span> 3,900 likes</div>
+
+        <!-- Define the section for displaying the seek slider-->
+        <div class="slider_container">
+            <div class="current-time">00:00</div>
+            <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+            <div class="total-duration">00:00</div>
+        </div>
+        <div class="row">
+            <!-- Define the section for displaying track buttons -->
+            <div>
+                <i class="fas fa-sync"></i>
+            </div>
+            <div class="buttons">
+                <div class="prev-track" onclick="prevTrack()">
+                    <i class="fas fa-backward"></i>
+                </div>
+                <div class="playpause-track" onclick="playpauseTrack()">
+                    <i class="fas fa-play"></i>
+                </div>
+                <div class="next-track" onclick="nextTrack()">
+                    <i class="fas fa-forward"></i>
+                </div>
+            </div>
+            <p id="plus">+</p>
+            <!-- Define the section for displaying the volume slider-->
+            <div class="slider_container">
+                <i class="fa fa-volume-down"></i>
+                <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
+                <i class="fa fa-volume-up"></i>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/script/script.js"></script>
+</body>
+
+</html>
